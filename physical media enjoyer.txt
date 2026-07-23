@@ -1,0 +1,21 @@
+you see a gal in the corner with her ear to a turntable, listening to a vinyl record
+
+as you approach her, she holds out a finger asking you to wait a little
+this is the best part of the song hold on a little
+okay, yeah what's up?
+
+[[why are you listening to a vinyl? you seem pretty young for that->PM1]]
+
+[[you dont have a powerbank by any chance?->PM2]]
+
+[[what are you listening to?->PM3]]
+
+PM1
+oh, you obviously haven't been blessed by the boundless light of physical media
+my listening activity is exclusively for me, no corporations can track it, and advertise based on it. also the sound is a much higher quality than you could get anywhere else, you can hear how much warmer it sounds.
+
+PM2
+yeah, but it only has ports for my camera, ds, mp3 player and reading light, if you need to charge something that uses one of those cables i would happy to share.
+
+PM3
+the wall by pink Floyd, skriv litt om the wall her, you're really missing out by not listening to this, and you miss out on all the little details if you're just streaming it, this is truly how music should be listened to
