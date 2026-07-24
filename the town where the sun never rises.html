@@ -115,11 +115,12 @@ font-family: Futura,Impact,Helvetica,sans-serif;
 font-size: 125%;
 }
 Changing colour and behaviour of links:
-/*
+
 a {
-color: darkblue;
+color: pink;
+  font-size: 175%;
 }
-*/
+
 a:hover {
 color: darkgrey;
 text-decoration: none;
@@ -213,13 +214,15 @@ $(document).on(":passageend", function (ev) {
 
 Your turn around. In your view, two buildings rising above the endless fog. One with a saloon looking door, and one that looks rougly like a dojo
 [[go to the dojo-&gt;dojo1]]
-[[go to the saloon-&gt;heidis1]]</tw-passagedata><tw-passagedata pid="2" name="heidis1" tags="heidis" position="750,650" size="100,100">You walk into the saloon which you saw was called &quot;The Old Irish Pub&quot; it&#39;s decorated with various oak furniture. You see a big piano in the corner and a giant well-kept orange tree in the middle of the room you notice there’s a trapdoor right over it, no doubt to give it sunlight during the summertime, not that that helps right now. 
+[[go to the saloon-&gt;heidis1]]
+[[Sentrum]] </tw-passagedata><tw-passagedata pid="2" name="heidis1" tags="heidis" position="750,650" size="100,100">You walk into the saloon which you saw was called &quot;The Old Irish Pub&quot; it&#39;s decorated with various oak furniture. You see a big piano in the corner and a giant well-kept orange tree in the middle of the room you notice there’s a trapdoor right over it, no doubt to give it sunlight during the summertime, not that that helps right now. 
 You see a guy sitting by one of the tables, he has centre parting hair and a turtleneck sweater with an expensive looking puffer jacket over. Hes sitting by himself looking lost in his own thoughts. you get the feeling that he would quite enjoy a having someone to listen to his struggles.
 theres also a guy standing in the corner
 
 [[walk up to the bar-&gt;ragnar]]
 [[walk up to the rich looking guy-&gt;BIkar]]
-[[walk up to the random guy-&gt;AdamSandler]]</tw-passagedata><tw-passagedata pid="3" name="trollMain" tags="Dojo" position="275,825" size="100,100">Noticing your presence, he turns around to meet your gaze. 
+[[walk up to the random guy-&gt;AdamSandler]]
+&lt;&lt;set $oldirishname to true&gt;&gt;[[Sentrum]]</tw-passagedata><tw-passagedata pid="3" name="trollMain" tags="Dojo" position="275,825" size="100,100">Noticing your presence, he turns around to meet your gaze. 
 
 &amp;gt; White woman spotted 
 &amp;gt; did_I_just_say_that_out_loud.png
@@ -272,7 +275,11 @@ You inform the troll of the immense power they can aquire, if you touch the tree
 
 Winner is the masterbaiter</tw-passagedata><tw-passagedata pid="7" name="Troll samtale" tags="Dojo" position="500,800" size="100,100">You ask about the troll</tw-passagedata><tw-passagedata pid="8" name="Dojo 2" tags="physical" position="100,825" size="100,100">As the troll continues his green text spiel, you step away for a moment to reassess your questions. 
 
-</tw-passagedata><tw-passagedata pid="9" name="Sentrum" tags="Sentrum" position="400,375" size="100,100">Accompinied by your foot prints in the snow, you look around for the next place to look among the buildings ahead </tw-passagedata><tw-passagedata pid="10" name="ragnar" tags="heidis" position="750,775" size="100,100">As you walk up to the bar to see if you can find an employee, you hear sounds from the backroom, and a man comes walking out. He has a big aura about him, and a big bushy beard, he also seems like he would really pull off wearing a hat, but alas, no such hat is on his head&lt;&lt;if $trollhat is true&gt;&gt;, thinking of it, you think the troll might have had a hat like that&lt;&lt;/if&gt;&gt;.
+</tw-passagedata><tw-passagedata pid="9" name="Sentrum" tags="Sentrum" position="525,500" size="100,100">Accompinied by your foot prints in the snow, you look around for the next place to look among the buildings ahead 
+
+[[go to the dojo-&gt;dojo1]]
+&lt;&lt;if $oldirishname is true&gt;&gt;[[go back to The Old Irish Pub-&gt;heidis1]] 
+&lt;&lt;else&gt;&gt;[[go to the saloon-&gt;heidis1]]&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="ragnar" tags="heidis" position="750,775" size="100,100">As you walk up to the bar to see if you can find an employee, you hear sounds from the backroom, and a man comes walking out. He has a big aura about him, and a big bushy beard, he also seems like he would really pull off wearing a hat, but alas, no such hat is on his head&lt;&lt;if $trollhat is true&gt;&gt;, thinking of it, you think the troll might have had a hat like that&lt;&lt;/if&gt;&gt;.
 
 [[hey, do you work here?-&gt;ragnar1]]
 [[do you by any chance have a powerbank around here? My phone is dead, and I need my ticket to get further south-&gt;ragnar2]]
